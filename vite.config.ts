@@ -13,6 +13,7 @@ export default defineConfig({
             "@widgets": process.cwd() + "/src/3.Widgets",
             "@entities": process.cwd() + "/src/4.entities",
             "@shared": process.cwd() + "/src/5.Shared",
+            "@ui": process.cwd() + "/src/5.Shared/ui",
         },
     },
 })
