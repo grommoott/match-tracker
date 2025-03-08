@@ -12,7 +12,7 @@ export const MatchCard: FC<Props> = ({ match }) => {
     return (
         <div className={style.matchCard}>
             <div className={style.teamContainer}>
-                <img src={teamIcon} />
+                <img src={teamIcon} draggable={false} />
                 <p>{match.homeTeam.name}</p>
             </div>
 
@@ -25,7 +25,7 @@ export const MatchCard: FC<Props> = ({ match }) => {
 
             <div className={style.teamContainer}>
                 <p>{match.awayTeam.name}</p>
-                <img src={teamIcon} />
+                <img src={teamIcon} draggable={false} />
             </div>
         </div>
     )

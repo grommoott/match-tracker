@@ -22,6 +22,10 @@ $disabled-background-color: #701328;
     transition: 100ms;
     cursor: pointer;
 
+    p {
+        user-select: none;
+    }
+
     &:active {
         background-color: $active-background-color;
     }
