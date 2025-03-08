@@ -1,3 +1,5 @@
+import { string } from "yup"
+
 export const MatchStatuses = {
     Finished: "Finished",
     Ongoing: "Ongoing",
@@ -5,3 +7,5 @@ export const MatchStatuses = {
 } as const
 
 export type MatchStatus = (typeof MatchStatuses)[keyof typeof MatchStatuses]
+
+export const matchStatusSchema = string().oneOf(Object.values(MatchStatuses))
