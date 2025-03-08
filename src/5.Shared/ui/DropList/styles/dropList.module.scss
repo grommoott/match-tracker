@@ -1,8 +1,6 @@
-* {
-    --default-background-color: #0b0e12;
-    --hover-background-color: #0f1318;
-    --active-border-color: #171d25;
-}
+$default-background-color: #0b0e12;
+$hover-background-color: #0f1318;
+$active-border-color: #171d25;
 
 .dropList {
     box-sizing: border-box;
@@ -12,11 +10,11 @@
     position: relative;
 
     border-radius: 4px;
-    background-color: var(--default-background-color);
+    background-color: $default-background-color;
     font-size: 16px;
     line-height: 1.5;
     cursor: pointer;
-    border-color: var(--active-border-color);
+    border-color: $active-border-color;
     user-select: none;
 
     display: flex;
@@ -28,11 +26,11 @@
     transition: 300ms ease-out;
 
     &:hover {
-        background-color: var(--hover-background-color);
+        background-color: $hover-background-color;
     }
 
     &:active {
-        background-color: var(--default-background-color);
+        background-color: $default-background-color;
 
         border-width: 1px;
     }
@@ -62,6 +60,6 @@
     align-items: start;
 
     box-shadow: 0px 2px 4px #0d101359;
-    background-color: var(--hover-background-color);
+    background-color: $hover-background-color;
     border-radius: 4px;
 }
