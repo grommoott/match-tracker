@@ -14,6 +14,7 @@ export default defineConfig({
             "@entities": process.cwd() + "/src/4.entities",
             "@shared": process.cwd() + "/src/5.Shared",
             "@ui": process.cwd() + "/src/5.Shared/ui",
+            "@types": process.cwd() + "/src/5.Shared/types",
         },
     },
 })
