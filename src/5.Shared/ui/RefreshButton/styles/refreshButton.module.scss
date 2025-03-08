@@ -35,3 +35,17 @@ $disabled-background-color: #701328;
     width: 24px;
     height: 24px;
 }
+
+.spinning {
+    animation: animation 0.7s infinite;
+
+    @keyframes animation {
+        from {
+            transform: rotateZ(0deg);
+        }
+
+        to {
+            transform: rotateZ(360deg);
+        }
+    }
+}
